@@ -8,13 +8,13 @@ const MapHeader = () => {
         { name: "Central Park", distance: "1.2 km" },
         { name: "City Mall", distance: "2.5 km" },
     ]);
-
-
+    
     let handleSearch = () => {
-        if (search.trim() === '') return;
+        if (!search || search.trim() === '') return;  // first check if search exists
         const url = `https://www.google.com/maps?q=${encodeURIComponent(search)}&output=embed`;
-        setMapApi(url)
+        setMapApi(url);
     }
+
     return (
         <div className="map-wrapper">
             {/* Top bar */}
@@ -27,7 +27,7 @@ const MapHeader = () => {
                     onChange={(e) => setSearch(e.target.value)}
                 />
                 <button className="btn" onClick={handleSearch}>Search</button>
-                
+
                 <div className="categories-dropdown">
                     <select className="categories-dropdown-content">
                         <option>Map Categories</option>

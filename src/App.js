@@ -1,11 +1,7 @@
-import Navbar from "./Pages/MapPage.jsx";
+import ReactRouter from "./Config/React-Router";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <ReactRouter />;
 }
 
 export default App;

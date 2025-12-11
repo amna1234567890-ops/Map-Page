@@ -1,7 +1,9 @@
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
   align-items: center;
+  width: 1000px;
   background: #4b74ff;
   padding: 40px;
   border-radius: 10px;

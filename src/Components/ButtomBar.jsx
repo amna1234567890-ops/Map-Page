@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Styles/ButtonBar.css";
 
 const ButtonBar = () => {
   return (
     <div className="container">
-    <div className="button-bar">
-      <div className="item airport">Airport Map</div>
-      <div className="item">Ticket Booking</div>
-      <div className="item">Hotel Reservation</div>
-      <div className="item">Flight Reservation</div>
-    </div>
+      <div className="button-bar">
+        <Link to="/" className="item airport">Airport Map</Link>
+        <Link to="/ticket" className="item">Ticket Booking</Link>
+        <Link to="/hotel" className="item">Hotel Reservation</Link>
+        <Link to="/flight" className="item">Flight Reservation</Link>
+      </div>
     </div>
   );
 };

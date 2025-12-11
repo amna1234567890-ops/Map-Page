@@ -1,18 +1,20 @@
 import Navbar from '../Components/Navbar'
 import Main from '../Components/Main.jsx'
 import ButtonBar from '../Components/ButtomBar.jsx'
-import Map from '../Components/Map.jsx'
 import Footer from '../Components/Footer.jsx'
-function MapPage() {
+import Ticket from '../Components/TicketCom.jsx'
+
+function TicketBookFunction() {
   return (
     < >
-      <Navbar/>
+      <Navbar />
       <Main />
       <ButtonBar />
-      <Map />
+      <Ticket />
       <Footer />
-      </>
+    </>
   );
 }
 
-export default MapPage;
+export default TicketBookFunction;
+
